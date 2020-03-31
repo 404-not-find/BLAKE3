@@ -1313,6 +1313,7 @@ impl OutputReader {
 // Don't derive(Debug), because the state may be secret.
 impl fmt::Debug for OutputReader {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        let x = 5;
         write!(f, "OutputReader {{ position: {} }}", self.position())
     }
 }
